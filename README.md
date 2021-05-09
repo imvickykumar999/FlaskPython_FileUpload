@@ -8,7 +8,7 @@ A simple flask upload program for multiple files requiring credentials
 - app.py
 - templates/upload_simple.html
 - config_simple.py
-- secure_db.py 
+- secure_db.py
 - new_user.py
 
 
@@ -16,21 +16,21 @@ Begin by creating a new database:
 ```
 python secure_db.py --wipe
 ```
-and adding a user 
+and adding a user
 ```
 python new_user.py bob ./ my_password
 ```
 
 
 
-Now we have a database, we can run the app with 
+Now we have a database, we can run the app with
 ```
 python app.py
 ```
 
-and the uploaded files should appear in a directory named `uploads_folder` 
+and the uploaded files should appear in a directory named `uploads_folder`
 
-
+https://towardsdatascience.com/writing-a-multi-file-upload-python-web-app-with-user-authentication-8f75064b819a
 
 
 
@@ -45,7 +45,7 @@ and the uploaded files should appear in a directory named `uploads_folder`
 brew install SQLCipher
 pip install pysqlcipher3
 ```
-#### Linux 
+#### Linux
 ```
 $ sudo apt install sqlcipher libsqlcipher0 libsqlcipher-dev
 $ sudo -H pip3 install pysqlcipher3
